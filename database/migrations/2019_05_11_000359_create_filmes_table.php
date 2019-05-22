@@ -13,7 +13,7 @@ class CreateFilmesTable extends Migration
      */
     public function up()
     {
-        Schema::create('movies', function (Blueprint $table) {
+        Schema::create('filmes', function (Blueprint $table) {
             $table->increments('id');
 			$table->string('nome');
 			$table->string('categoria');
@@ -31,6 +31,6 @@ class CreateFilmesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('movies');
+        Schema::dropIfExists('filmes');
     }
 }

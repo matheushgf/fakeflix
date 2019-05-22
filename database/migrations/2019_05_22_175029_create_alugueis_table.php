@@ -13,11 +13,16 @@ class CreateAlugueisTable extends Migration
      */
     public function up()
     {
-        Schema::create('rentals', function (Blueprint $table) {
+        Schema::create('alugueis', function (Blueprint $table) {
             $table->increments('id');
 			$table->date('dataAluguel');
 			$table->date('dataEntrega');
+			$table->integer('filmes_id')->unsigned();
+			$table->integer('clientes_id')->unsigned();
             $table->timestamps();
+			
+			$table->foreign('filmes_id')->references('id')->on('filmes');
+			$table->foreign('clientes_id')->references('id')->on('clientes');
         });
     }
 
@@ -28,6 +33,6 @@ class CreateAlugueisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rentals');
+        Schema::dropIfExists('alugueis');
     }
 }
