@@ -21,4 +21,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
+Route::get('/filmes', 'FilmeController@index')->name('filmes.index');
+Route::post('/filmes/store', 'FilmeController@store')->name('filmes.store');
+Route::post('/filmes/new', 'FilmeController@new')->name('filmes.new');
+Route::post('/filmes/delete', 'FilmeController@delete')->name('filmes.delete');
+Auth::routes();
+
 Route::get('/home', 'HomeController@index')->name('home');
