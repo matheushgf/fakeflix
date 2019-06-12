@@ -131,30 +131,17 @@ return [
         ],
         [
             'text' => 'Clientes',
-            'url'  => 'admin/settings',
+            'url'  => 'clientes.index',
             'icon' => 'square',
         ],
 
         'COMPRAS',
         [
             'text' => 'Alugueis',
-            'url' => '',
+            'url' => 'alugueis.index',
             'icon' => 'shopping-cart',
         ],
 
-        'LABELS',
-        [
-            'text'       => 'Important',
-            'icon_color' => 'red',
-        ],
-        [
-            'text'       => 'Warning',
-            'icon_color' => 'yellow',
-        ],
-        [
-            'text'       => 'Information',
-            'icon_color' => 'aqua',
-        ],
     ],
 
     /*

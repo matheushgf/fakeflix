@@ -12,8 +12,5 @@ use Auth;
 
 class FimesController extends Controller
 {
-     public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
 }
