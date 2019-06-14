@@ -131,14 +131,14 @@ return [
         ],
         [
             'text' => 'Clientes',
-            'url'  => 'clientes.index',
+            'route'  => 'clientes.index',
             'icon' => 'square',
         ],
 
         'COMPRAS',
         [
             'text' => 'Alugueis',
-            'url' => 'alugueis.index',
+            'url' => '',
             'icon' => 'shopping-cart',
         ],
 

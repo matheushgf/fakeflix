@@ -23,8 +23,6 @@
 
 @section('content')
 
-<p>Deu certo</p>
-
 @if (session('message'))
     <div class="alert alert-{{ session('type') }} alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -80,7 +78,7 @@
                     <td style="width:135px;">
 
                         <!-- exclusão do registro -->
-                        <form action="{{ route('clientes.delete', $cliente->id) }}" method="post">
+                        <form action="{{ route('clientes.delete', $filme->id) }}" method="post">
                             <input type="hidden" name="_method" value="DELETE">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -89,13 +87,35 @@
                             </button>
                         </form>
                     </td>
-
                 </tr>
-                 @endforeach
-            </tbody>
+                @endforeach
 
+            </tbody>
+        </table>
+    </div>
+
+    <div class="panel-footer">
+        {{ $clientes->links()  }}
     </div>
 
 </div>
+@stop
+
+@section('js')
+<script>
+$(document).ready(function() {
+    $('#table-Clientes').DataTable(
+        {
+            "paging": false,
+            "info": false,
+            "searching": false,
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
+            },
+            "processing": true,
+        }
+    );
+});
+</script>
 
 @stop
