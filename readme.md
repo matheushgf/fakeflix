@@ -7,6 +7,7 @@ Utiliza os seguintes objetos:
 
 **Filme**;  
   Com os atributos:  
+    Id,  
     Nome,  
     Categoria,  
     Autor,  
@@ -15,11 +16,13 @@ Utiliza os seguintes objetos:
     
 **Cliente**;  
   Atributos:  
+    Id,  
     Nome,   
     Cartão.  
       
 **Aluguel**;  
   Atributos:  
+    Id,  
     Data de Aluguel,  
     Data de Entrega,  
     ID Filme,  
