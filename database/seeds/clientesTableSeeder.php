@@ -17,6 +17,7 @@ class clientesTableSeeder extends Seeder
 				'nome' => $faker->name(),
 				'cartao' => $faker->creditCardNumber(),
 				'created_at' => Carbon\Carbon::now(),
+                'status' => true
 			]);
 		}
     }

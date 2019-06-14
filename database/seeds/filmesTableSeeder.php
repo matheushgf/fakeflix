@@ -21,6 +21,7 @@ class filmesTableSeeder extends Seeder
 					'diretor' => $faker->name(),
 					'preco' => $faker->randomFloat($nbMaxDecimals = 2, $min = 0, $max = 200),
 					'created_at' =>\Carbon\Carbon::now(),
+                    'status' => true
 				]);
 		}
     }

@@ -20,6 +20,7 @@ class CreateFilmesTable extends Migration
 			$table->string('autor');
 			$table->string('diretor');
 			$table->float('preco');
+			$table->boolean('status');
             $table->timestamps();
         });
     }

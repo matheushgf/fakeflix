@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Validator;
 class FilmeController extends Controller
 {
     public function index(){
-        $filmes = Filmes::all();
-        return view('filme.index', ['filmes' => $filmes]);
+        $filmes = Filmes::where('status', 1)->get();
+        return view('filmes.index', ['filmes' => $filmes]);
     }
 
     public function new(){
@@ -30,26 +30,75 @@ class FilmeController extends Controller
                 ->withErrors($validator)
                 ->withInput();
         }else{
-            $filme = new Filme();
+
+            $filme = new Filmes();
             $filme->nome = $request->nome;
             $filme->categoria = $request->categoria;
             $filme->autor = $request->autor;
             $filme->diretor = $request->diretor;
             $filme->preco = $request->preco;
+            $filme->status = true;
 
             $filme->save();
 
-            return 'Salvo com sucesso';
+            return redirect()
+            ->route('filmes.index')
+            ->with('status', 'Filme registrado com sucesso!');
         }
     }
 
     public function delete(Request $request){
         if($request->input('filme_id')){
             $filme = Filmes::find($request->input('filme_id'));
-            $filme->delete();
-            return "Deletado com sucpesso";
+            $filme->status = false;
+            $filme->save();
+            return redirect()
+                ->route('filmes.index')
+                ->with('status', 'Filme deletado com sucesso!');
         }else{
-            return "Não encontrado";
+            return redirect()
+                ->route('filmes.index')
+                ->with('message', 'Filme não encontrado!');
+        }
+    }
+
+    public function edit($id){
+        $filme = Filmes::find($id);
+        return view('filmes.edit', ['filme' => $filme]);
+    }
+
+    public function update(Request $request){
+        $validator = Validator::make($request->all(), [
+            'nome' => 'required',
+            'categoria' => 'required',
+            'autor' => 'required',
+            'diretor' => 'required',
+            'preco' => 'required|numeric',
+        ]);
+
+        if ($validator->fails()) {
+            return back()
+                ->withErrors($validator)
+                ->withInput();
+        }else{
+            $filme = Filmes::find($request->id);
+            if($filme){
+                $filme->nome = $request->nome;
+                $filme->categoria = $request->categoria;
+                $filme->autor = $request->autor;
+                $filme->diretor = $request->diretor;
+                $filme->preco = $request->preco;
+                $filme->status = true;
+                $filme->save();
+            }else{
+                return redirect()
+                    ->route('filmes.index')
+                    ->with('status', 'Filme não encontrado!');
+            }
+            return redirect()
+                ->route('filmes.index')
+                ->with('status', 'Filme atualizado com sucesso!');
         }
     }
 }
+

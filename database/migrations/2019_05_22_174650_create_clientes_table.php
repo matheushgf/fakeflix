@@ -17,6 +17,7 @@ class CreateClientesTable extends Migration
             $table->increments('id');
 			$table->string('nome');
 			$table->string('cartao');
+            $table->boolean('status');
             $table->timestamps();
         });
     }
