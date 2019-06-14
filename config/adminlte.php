@@ -138,7 +138,7 @@ return [
         'COMPRAS',
         [
             'text' => 'Alugueis',
-            'url' => '',
+            'route' => 'alugueis.index',
             'icon' => 'shopping-cart',
         ],
 

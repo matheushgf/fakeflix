@@ -6,5 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Alugueis extends Model
 {
-    $fillable = ['dataAluguel', 'dataEntrega', 'filmes_id', 'clientes_id'];
+    protected $fillable = ['dataAluguel', 'dataEntrega'];
+
+    public function filme()
+    {
+        return $this->belongsTo('\fakeflix\Models\Filmes');
+    }
+
+    public function cliente()
+    {
+        return $this->belongsTo('\fakeflix\Models\Clientes');
+    }
 }

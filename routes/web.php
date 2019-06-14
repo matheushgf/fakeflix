@@ -35,7 +35,10 @@ Route::post('/clientes/delete', 'ClienteController@delete')->name('clientes.dele
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/alugueis', 'AluguelController@index')->name('alugueis.index');
+Route::post('/alugueis/store', 'AluguelController@store')->name('alugueis.store');
+Route::get('/alugueis/new', 'AluguelController@new')->name('alugueis.new');
+Route::post('/alugueis/delete', 'AluguelController@delete')->name('alugueis.delete');
 
 Auth::routes();
 

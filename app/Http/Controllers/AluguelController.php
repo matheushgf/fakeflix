@@ -5,52 +5,51 @@ use App\Models\Alugueis;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
-class FilmeController extends Controller
+class AluguelController extends Controller
 {
     public function index(){
-        $filmes = Filmes::all();
-        return view('filmes.index', ['filmes' => $filmes]);
+        $alugueis = Alugueis::all();
+        return view('alugueis.index', ['alugueis' => $alugueis]);
     }
 
     public function new(){
-        return view('filmes.new');
+        return view('alugueis.new');
     }
 
     public function store(Request $request){
         $validator = Validator::make($request->all(), [
-            'nome' => 'required',
-            'categoria' => 'required',
-            'autor' => 'required',
-            'diretor' => 'required',
-            'preco' => 'required|numeric',
+            'dataAluguel' => 'required',
+            'dataEntrega' => 'required',
+            'filmes_id' => 'required',
+            'clientes_id' => 'required',
         ]);
 
         if ($validator->fails()) {
-            return redirect('filmes/new')
+            return redirect('alugueis/new')
                 ->withErrors($validator)
                 ->withInput();
         }else{
-            $filme = new Filmes();
-            $filme->nome = $request->nome;
-            $filme->categoria = $request->categoria;
-            $filme->autor = $request->autor;
-            $filme->diretor = $request->diretor;
-            $filme->preco = $request->preco;
+            $filme = new alugueis();
+            $filme->dataAluguel = $request->dataAluguel;
+            $filme->dataEntrega = $request->dataEntrega;
+            $filme->filmes_id = $request->filmes_id;
+            $filme->clientes_id = $request->clientes_id;
 
             $filme->save();
 
             return redirect()
-            ->route('filmes.index')
+            ->route('alugueis.index')
             ->with('status', 'Registro criado com sucesso!');
         }
     }
 
     public function delete(Request $request){
-        if($request->input('filme_id')){
-            $filme = Filmes::find($request->input('filme_id'));
+        if($request->input('aluguel_id')){
+            $filme = alugueis::find($request->input('aluguel_id'));
             $filme->delete();
             return "Deletado com sucesso";
         }else{
             return "Não encontrado";
         }
     }
+}

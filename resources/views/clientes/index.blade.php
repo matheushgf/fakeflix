@@ -23,8 +23,6 @@
 
 @section('content')
 
-<p>Deu certo</p>
-
 @if (session('message'))
     <div class="alert alert-{{ session('type') }} alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
