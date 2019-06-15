@@ -25,6 +25,7 @@ Route::get('/filmes', 'FilmeController@index')->name('filmes.index');
 Route::post('/filmes/store', 'FilmeController@store')->name('filmes.store');
 Route::get('/filmes/new', 'FilmeController@new')->name('filmes.new');
 Route::post('/filmes/delete', 'FilmeController@delete')->name('filmes.delete');
+Route::get('/filmes/edit', 'FilmeController@edit')->name('filmes.edit');
 
 Auth::routes();
 
@@ -42,4 +43,13 @@ Route::post('/alugueis/delete', 'AluguelController@delete')->name('alugueis.dele
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/users', 'UsersController@index')->name('users.index');
+Route::get('/users/create', 'UsersController@create')->name('users.create');
+Route::post('/users', 'UsersController@store')->name('users.store');
+Route::get('/users/{id}', 'UsersController@show')->name('users.show');
+Route::get('/users/{id}/edit', 'UsersController@edit')->name('users.edit');
+Route::put('/users/{id}', 'UsersController@update')->name('users.update');
+Route::delete('/users/{id}/delete', 'UsersController@destroy')->name('users.destroy');
+
+Route::get('/profile/edit', 'UsersController@editProfile')->name('profile.edit');
+Route::put('/profile/{id}', 'UsersController@updateProfile')->name('profile.update');

@@ -54,4 +54,14 @@ class FilmeController extends Controller
             return "Não encontrado";
         }
     }
+
+    public function edit(){
+        return view('filmes.edit');
+    }
+
+    public function update(Request $request, $id){
+        $rules = [
+            
+        ];
+    }
 }

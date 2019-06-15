@@ -108,20 +108,17 @@ return [
     */
 
     'menu' => [
-        /* 'PRINCIPAL',
+        'PRINCIPAL',
         [
-            'text' => 'Blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text' => 'Dashboard',
+            'route'  => 'home',
+            'icon' => 'dashboard'
         ],
         [
-            'text'        => 'Pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text' => 'Profile',
+            'route'  => 'profile.edit',
+            'icon' => 'user',
         ],
-        */
 
         'CADASTRO',
         [
@@ -140,6 +137,13 @@ return [
             'text' => 'Alugueis',
             'route' => 'alugueis.index',
             'icon' => 'shopping-cart',
+        ],
+
+         'ADMINISTRAÇÃO',
+        [
+            'text' => 'Usuários',
+            'route'  => 'users.index',
+            'icon' => 'users',
         ],
 
     ],

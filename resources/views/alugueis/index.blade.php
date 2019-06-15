@@ -1,37 +1,34 @@
-{{-- resources/views/aluguels/index.blade.php --}}
-
 @extends('adminlte::page')
-
-@section('title', 'Aluguel')
 
 @section('title', config('adminlte.title'))
 <meta name="csrf_token" content="{{ csrf_token() }}" />
 
 @section('content_header')
 <span style="font-size:20px">
-    <i class='fa fa-database'></i> Alugueis
+    <i class='fa fa-database'></i> Lista de alugueis
 </span>
 
 <ol class="breadcrumb">
     <li>
         <a href="{{ route('home') }}">Dashboard</a>
     </li>
-    <li class="active">Aluguel</li>
+    <li class="active">Lista de alugueis</li>
 </ol>
 
 @stop
 
 @section('content')
-        @if (session('message'))
+
+@if (session('message'))
     <div class="alert alert-{{ session('type') }} alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
         <strong>Atenção: </strong>{{ session('message') }}
     </div>
-    @endif
+@endif
 
-    <div class="panel panel-default">
+<div class="panel panel-default">
     <!-- Default panel contents -->
     <div class="panel-heading clearfix">
         <div class="btn-group pull-right">
@@ -39,7 +36,7 @@
                 <i class="fa fa-plus"></i> Inserir um novo registro
             </a>
         </div>
-        <h5>Relação de Alugueis</h5>
+        <h5>Relação de Aluguéis</h5>
     </div>
 
     <div class="panel-body">
@@ -53,6 +50,7 @@
                     <th>ID Filme</th>
                     <th>ID Cliente</th>
                     <th class='text-center'>Data de Criação</th>
+                    <th class='text-center'>Ações</th>
                 </tr>
             </thead>
 
@@ -64,18 +62,18 @@
                     </td>
 
                     <td>
-                        {{ $aluguel->dataAluguel }}
+                        {{ $aluguel->dataAluguel->format('d/m/Y h:m') }}
                     </td>
 
-                    <td>
-                        {{ $aluguel->dataEntrega }}
+                    <td class='text-right'>
+                        {{ $aluguel->dataEntrega->format('d/m/Y h:m') }}
                     </td>
 
-                    <td>
+                    <td class='text-right'>
                         {{ $aluguel->filmes_id }}
                     </td>
 
-                    <td>
+                    <td class='text-right'>
                         {{ $aluguel->clientes_id }}
                     </td>
 
@@ -83,10 +81,9 @@
                         {{ $aluguel->created_at->format('d/m/Y h:m') }}
                     </td>
 
-                    <td style="width:135px;">
 
                         <!-- exclusão do registro -->
-                        <form action="{{ route('alugueis.delete', $aluguel->id) }}" method="post">
+                        <form action="{{ route('alugueis.delete', $p->id) }}" method="post">
                             <input type="hidden" name="_method" value="DELETE">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -96,9 +93,34 @@
                         </form>
                     </td>
                 </tr>
-            @endforeach
-            </tbody>
+                @endforeach
 
+            </tbody>
+        </table>
     </div>
+
+    <div class="panel-footer">
+        {{ $alugueis->links()  }}
+    </div>
+
+</div>
+@stop
+
+@section('js')
+<script>
+$(document).ready(function() {
+    $('#table-alugueis').DataTable(
+        {
+            "paging": false,
+            "info": false,
+            "searching": false,
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
+            },
+            "processing": true,
+        }
+    );
+});
+</script>
 
 @stop

@@ -90,6 +90,11 @@
 
                     <td style="width:135px;">
 
+                        <a class='btn btn-warning btn-sm'  style="float:left;margin-right: 2px;"
+                           href='{{ route("filmes.edit", $filme->id) }}' role='button'>
+                            <i class='fa fa-pencil'></i>
+                        </a>
+
                         <!-- exclusão do registro -->
                         <form action="{{ route('filmes.delete', $filme->id) }}" method="post">
                             <input type="hidden" name="_method" value="DELETE">
