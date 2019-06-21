@@ -55,8 +55,8 @@
                     <th>ID Aluguel</th>
                     <th>Data de Aluguel</th>
                     <th>Data de Entrega</th>
-                    <th>ID Filme</th>
-                    <th>ID Cliente</th>
+                    <th>Filme</th>
+                    <th>Cliente</th>
                     <th class='text-center'>Data de Criação</th>
                 </tr>
             </thead>
@@ -69,19 +69,19 @@
                     </td>
 
                     <td>
-                        {{ $aluguel->dataAluguel }}
+                        {{ date('d/m/Y', strtotime($aluguel->dataAluguel)) }}
                     </td>
 
                     <td>
-                        {{ $aluguel->dataEntrega }}
+                        {{ date('d/m/Y', strtotime($aluguel->dataEntrega)) }}
                     </td>
 
                     <td>
-                        {{ $aluguel->filmes_id }}
+                        {{ $aluguel->filme_nome }}
                     </td>
 
                     <td>
-                        {{ $aluguel->clientes_id }}
+                        {{ $aluguel->cliente_nome }}
                     </td>
 
                     <td class='text-center' style='width:150px'>

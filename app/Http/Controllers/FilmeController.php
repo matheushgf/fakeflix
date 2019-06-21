@@ -73,7 +73,7 @@ class FilmeController extends Controller
             'categoria' => 'required',
             'autor' => 'required',
             'diretor' => 'required',
-            'preco' => 'required|numeric',
+            'preco' => 'required|numeric|min:1',
         ]);
 
         if ($validator->fails()) {

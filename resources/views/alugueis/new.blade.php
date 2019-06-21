@@ -61,33 +61,41 @@
             </div>
 
             <div class="form-group">
-                <label for="filmes_id">Id do Filme
+                <label for="filme">Filme
                     <span class="text-red">*</span>
                 </label>
 
-                <input type="text" class="form-control {{ $errors->has('filmes_id') ? 'is-invalid' : '' }}"
-                    id="filmes_id" name="filmes_id" placeholder="Id do Filme"
-                    value="{{ old('filmes_id') }}">
+                <select class="form-control {{ $errors->has('filme') ? 'is-invalid' : '' }}"
+                       id="filme" name="filme">
+                    <option value="">Selecione o Filme</option>
+                    @foreach($filmes as $filme)
+                        <option value="{{ $filme->id }}" {{($filme->id == old('filme'))?'selected':''}}>{{ $filme->nome }}</option>
+                    @endforeach
+                </select>
 
-                @if($errors->has('filmes_id'))
-                <span class='invalid-feedback text-red'>
-                    {{ $errors->first('filmes_id') }}
+                @if($errors->has('filme'))
+                    <span class='invalid-feedback text-red'>
+                    {{ $errors->first('filme') }}
                 </span>
                 @endif
             </div>
 
             <div class="form-group">
-                <label for="clientes_id">Id do Cliente
+                <label for="cliente">Cliente
                     <span class="text-red">*</span>
                 </label>
 
-                <input type="text" class="form-control {{ $errors->has('clientes_id') ? 'is-invalid' : '' }}"
-                    id="clientes_id" name="clientes_id" placeholder="Id do Cliente"
-                    value="{{ old('clientes_id') }}">
+                <select class="form-control {{ $errors->has('cliente') ? 'is-invalid' : '' }}"
+                        id="cliente" name="cliente">
+                    <option value="">Selecione o Cliente</option>
+                    @foreach($clientes as $cliente)
+                        <option value="{{ $cliente->id }}" {{($cliente->id == old('cliente'))?'selected':''}}>{{ $cliente->nome }}</option>
+                    @endforeach
+                </select>
 
-                @if($errors->has('clientes_id'))
+                @if($errors->has('cliente'))
                 <span class='invalid-feedback text-red'>
-                    {{ $errors->first('clientes_id') }}
+                    {{ $errors->first('cliente') }}
                 </span>
                 @endif
             </div>

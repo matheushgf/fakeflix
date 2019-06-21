@@ -2,30 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116e6963-99d4-4265-997e-9d1a9160fc35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AluguelController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ClienteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/alugueis/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/alugueis/new.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/new.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/filmes/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/filmes/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/filmes/new.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AluguelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AluguelController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FilmeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FilmeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Alugueis.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Alugueis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Clientes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Clientes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Filmes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Filmes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_11_000359_create_filmes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_11_000359_create_filmes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_22_174650_create_clientes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_22_174650_create_clientes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/clientesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/clientesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/filmesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/filmesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alugueis/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alugueis/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alugueis/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alugueis/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alugueis/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alugueis/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/filmes/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/filmes/new.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,13 +20,27 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+            <state relative-caret-position="283">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -50,22 +48,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/alugueis/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="103" column="60" lean-forward="true" selection-start-line="103" selection-start-column="60" selection-end-line="103" selection-end-column="60" />
+            <state relative-caret-position="174">
+              <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AluguelController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
               <folding>
-                <element signature="e#2825#2878#0#HTML" expanded="true" />
-                <element signature="e#3173#3191#0#HTML" expanded="true" />
-                <element signature="e#3529#3558#0#HTML" expanded="true" />
+                <element signature="e#39#63#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AluguelController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/alugueis/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+            <state relative-caret-position="135">
+              <caret line="91" column="95" selection-start-line="91" selection-start-column="95" selection-end-line="91" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/alugueis/new.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Alugueis.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Filmes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -73,26 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FilmeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="69" selection-start-line="69" selection-end-line="101" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/alugueis/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="101" column="70" lean-forward="true" selection-start-line="101" selection-start-column="70" selection-end-line="101" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/filmes/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="127" selection-start-line="127" selection-end-line="128" selection-end-column="60" />
+            <state relative-caret-position="85">
+              <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -123,8 +137,6 @@
         <option value="C:/php-7.3.6/php.ini" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Models/Alugueis.php" />
-        <option value="$PROJECT_DIR$/app/Models/Filmes.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_11_000359_create_filmes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_22_174650_create_clientes_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/clientesTableSeeder.php" />
@@ -132,15 +144,17 @@
         <option value="$PROJECT_DIR$/resources/views/clientes/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ClienteController.php" />
         <option value="$PROJECT_DIR$/resources/views/clientes/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/filmes/new.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/FilmeController.php" />
         <option value="$PROJECT_DIR$/resources/views/filmes/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/alugueis/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/filmes/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/alugueis/new.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AluguelController.php" />
+        <option value="$PROJECT_DIR$/resources/views/filmes/new.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Filmes.php" />
+        <option value="$PROJECT_DIR$/app/Models/Alugueis.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/FilmeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/alugueis/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/alugueis/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AluguelController.php" />
       </list>
     </option>
   </component>
@@ -245,13 +259,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="fakeflix" type="b2602c69:ProjectViewProjectNode" />
               <item name="fakeflix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fakeflix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fakeflix" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fakeflix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fakeflix" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fakeflix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fakeflix" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fakeflix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fakeflix" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fakeflix" type="b2602c69:ProjectViewProjectNode" />
@@ -271,10 +308,23 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="alugueis" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fakeflix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fakeflix" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="filmes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fakeflix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fakeflix" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,17 +397,19 @@
       <workItem from="1559306053333" duration="3547000" />
       <workItem from="1559340315450" duration="3953000" />
       <workItem from="1560372228665" duration="1557000" />
+      <workItem from="1560555084980" duration="2935000" />
+      <workItem from="1561138164539" duration="4093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21010000" />
+    <option name="totallyTimeSpent" value="28038000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2743161" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -370,14 +422,14 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991454" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32991454" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32991454" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32991454" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32980332" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32978722" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,13 +461,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/fakeflixModel.php" />
-    <entry file="file://$PROJECT_DIR$/app/Models/Clientes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -444,23 +489,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/alugueis/new/new.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Alugueis.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Filmes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/alugueis/new/new.blade.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_22_174650_create_clientes_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -507,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/filmes/new.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/clientes/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-87">
@@ -533,69 +555,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/filmes/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/filmes/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="109" column="28" lean-forward="true" selection-start-line="105" selection-start-column="24" selection-end-line="109" selection-end-column="28" />
-          <folding>
-            <element signature="e#2651#2704#0#HTML" expanded="true" />
-            <element signature="e#2997#3015#0#HTML" expanded="true" />
-            <element signature="e#3316#3345#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="3048">
+          <caret line="127" selection-start-line="127" selection-end-line="128" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Clientes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/filmes/new.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="101" column="91" selection-start-line="101" selection-start-column="91" selection-end-line="101" selection-end-column="91" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        <state relative-caret-position="283">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/alugueis/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/filmes/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="103" column="60" lean-forward="true" selection-start-line="103" selection-start-column="60" selection-end-line="103" selection-end-column="60" />
-          <folding>
-            <element signature="e#2825#2878#0#HTML" expanded="true" />
-            <element signature="e#3173#3191#0#HTML" expanded="true" />
-            <element signature="e#3529#3558#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/alugueis/new.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1715">
-          <caret line="89" column="50" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
+        <state relative-caret-position="91">
+          <caret line="102" column="59" lean-forward="true" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FilmeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="69" selection-start-line="69" selection-end-line="101" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AluguelController.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Alugueis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+        <state relative-caret-position="213">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/filmes/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Filmes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="127" selection-start-line="127" selection-end-line="128" selection-end-column="60" />
+        <state relative-caret-position="202">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/alugueis/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/alugueis/new.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/alugueis/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="101" column="70" lean-forward="true" selection-start-line="101" selection-start-column="70" selection-end-line="101" selection-end-column="70" />
+        <state relative-caret-position="135">
+          <caret line="91" column="95" selection-start-line="91" selection-start-column="95" selection-end-line="91" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AluguelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding>
+            <element signature="e#39#63#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

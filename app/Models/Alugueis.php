@@ -10,7 +10,7 @@ class Alugueis extends Model
 
     public function filme()
     {
-        return $this->belongsTo('App\Models\Filmes', 'filme_id', 'id');
+        return $this->hasOne('App\Models\Filmes', 'id', 'filme_id');
     }
 
     public function cliente()

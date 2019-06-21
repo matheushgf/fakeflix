@@ -99,7 +99,7 @@
                 <div class="input-group">
                     <div class="input-group-addon">R$</div>
                     <input type="number" class="form-control {{ $errors->has('preco') ? 'is-invalid' : '' }}"
-                        id="preco" name="preco" min="0.00" max="99999.99" step="0.01">
+                        id="preco" name="preco" min="1.00" step="0.01" value="{{ old('preco') }}">
 
                     @if($errors->has('preco'))
                     <span class='invalid-feedback text-red'>
